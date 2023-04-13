@@ -1,4 +1,4 @@
-import '../Stylesheets/App.css';
+import '../Stylesheets/global.module.css';
 import { NavigationBar } from './Home'
 
 function Pickems() {

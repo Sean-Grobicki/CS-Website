@@ -1,0 +1,18 @@
+.navbarCon
+{
+    display: flex;
+    flex: 2;
+    background-color:white;
+}
+
+.navbarLink
+{
+    flex: 1;
+    text-decoration: none;
+    font-weight: 800;
+    color: gray;
+    font-size: large;
+    padding: 1%;
+    text-align: center;
+    margin: 0%;
+}

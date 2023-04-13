@@ -1,0 +1,28 @@
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    height: 100%;
+}
+
+.headerDiv
+{
+    background-color: #33383e ;
+    border-bottom: solid 2px #afafaf;
+}
+
+/* Title for Page */
+.h1
+{
+    flex: 1;
+    align-self: center;
+    margin: 0.5%;
+    text-align: center;
+    color: white;
+    font-weight: 800;
+}
