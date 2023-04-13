@@ -1,12 +1,16 @@
-
+html
+{
+    background-color: #000037;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+}
 .container
 {
     display: flex;
+    flex: auto;
     flex-direction: column;
-    flex: 1;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: whitesmoke;
-    border-radius: 5px;
+    background-color: rgb(31, 12, 25);
+    color: #000037;
     height: 100%;
 }
 
@@ -23,6 +27,39 @@
     align-self: center;
     margin: 0.5%;
     text-align: center;
+    color: rgb(255, 254, 114);
+    font-weight: 800;
+}
+
+.h2
+{
+    flex: 1;
+    align-self: center;
+    margin: 0.5%;
+    text-align: center;
     color: white;
     font-weight: 800;
+}
+
+.contentCon
+{
+    flex: auto;
+    height: 100%;
+    background-color: rgb(31, 12, 25);
+    border-radius: 5px;
+    margin: 0.5%;
+    border: solid 2px rgb(255, 254, 114);
+}
+
+.footer
+{
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
+    align-items: flex-start;
+    padding: 1%;
+    padding-left: 2%;
+    background-color: rgb(37, 24, 33);
+    border-top: solid 2px #afafaf;
+
 }

@@ -2,7 +2,7 @@
 {
     display: flex;
     flex: 2;
-    background-color:white;
+    background-color:#000037;
 }
 
 .navbarLink
@@ -10,7 +10,7 @@
     flex: 1;
     text-decoration: none;
     font-weight: 800;
-    color: gray;
+    color: white;
     font-size: large;
     padding: 1%;
     text-align: center;

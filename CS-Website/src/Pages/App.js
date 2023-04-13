@@ -3,12 +3,13 @@ import Pickems from './Pickems';
 import Rankings from './Rankings';
 import Teams from './Teams';
 import {Routes, Route} from 'react-router-dom';
+import global from '../Stylesheets/global.module.css';
 
 
 
 function App() {
   return (
-    <div className='App'>
+    <div className={global.container}>
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="Pickems" element={<Pickems/>}/>

@@ -1,15 +1,19 @@
 import { Link } from 'react-router-dom';
-import '../Stylesheets/NavBar.css';
-import '../Stylesheets/global.module.css';
+import navbarStyle from'../Stylesheets/NavBar.module.css';
+import globalStyle from '../Stylesheets/global.module.css';
 
 function Home() {
   return (
-    <div className="container">
-      <header className="headerDiv">
-        <h1 className='h1'>Blast Paris Major 2023</h1>
+    <div className={globalStyle.container}>
+      <header className={globalStyle.headerCon}>
         <NavigationBar/>
-        <h2>Home</h2>
       </header>
+      <div className={globalStyle.contentCon}>
+        <h2 className={globalStyle.h2}>Home</h2>
+      </div>
+      <footer className={globalStyle.footer}>
+        
+      </footer>
     </div>
   );
 }
@@ -19,11 +23,11 @@ export default Home;
 export function NavigationBar()
 {
   return (
-      <nav className="navbarCon">
-        <Link className="navBarLink" to="/">Home</Link>
-        <Link className='navbarLink' to="/Pickems">Pickems</Link>
-        <Link className='navbarLink' to="/Teams">Teams</Link>
-        <Link className='navbarLink' to ="/Rankings">Rankings</Link>
+      <nav className={navbarStyle.navbarCon}>
+        <Link className={navbarStyle.navbarLink} to="/">Blast Paris Major 2023</Link>
+        <Link className={navbarStyle.navbarLink} to="/Pickems">Pickems</Link>
+        <Link className={navbarStyle.navbarLink} to="/Teams">Teams</Link>
+        <Link className={navbarStyle.navbarLink} to ="/Rankings">Rankings</Link>
       </nav>
   );
 }
