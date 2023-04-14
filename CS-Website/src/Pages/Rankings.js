@@ -10,6 +10,8 @@ function Rankings() {
       <div className={global.contentCon}> 
         <h2 className={global.h2}>Valve Rankings</h2>
       </div>
+      <footer className={global.footer}>
+      </footer>
     </div>
   );
 }

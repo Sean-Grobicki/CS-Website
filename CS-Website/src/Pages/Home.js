@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import navbarStyle from'../Stylesheets/NavBar.module.css';
+import navbarStyle from'../Stylesheets/navBar.module.css';
 import globalStyle from '../Stylesheets/global.module.css';
 
 function Home() {

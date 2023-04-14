@@ -9,7 +9,10 @@ function Pickems() {
       </header>
       <div className={global.contentCon}>
           <h2 className={global.h2}>Pickems</h2>
-        </div>
+      </div>
+      <footer className={global.footer}>
+        
+      </footer>
     </div>
   );
 }
