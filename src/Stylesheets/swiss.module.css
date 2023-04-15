@@ -28,18 +28,16 @@
 
 .matchupBody
 {
-    background-color: #33383e;
     margin: 0;
     width: 100%;
 }
 
 .matchCon
 {
-    background-color: blue;
     display: flex;
     flex-direction: row;
     margin: 0;
-    width:100%;
+    align-items: center;
 }
 
 .title
@@ -77,5 +75,10 @@
     background-color: #33383e;
     border-radius: 5px;
     justify-content: center;
+}
+
+.vs
+{
+    color: white;
 }
 
