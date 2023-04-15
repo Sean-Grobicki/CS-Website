@@ -1,9 +1,13 @@
 import global from '../Stylesheets/global.module.css';
 import teams from '../Stylesheets/teams.module.css';
 import { NavigationBar } from './Home';
-import FnaticLogo from '../Images/fnaticLogo.png';
+import { Major } from '../Scripts/teamClasses';
+
+
+
 
 function Teams() {
+  const major = new Major();
   return (
     <div className={global.container}>
       <header className={global.headerCon}>
@@ -14,43 +18,15 @@ function Teams() {
         <div className={teams.displayHorizontal}>
           <div className={teams.challengersCon}>
             <div className={teams.titleBar}>
-            < h3 className={teams.titleText}>Challengers</h3>
+            <h3 className={teams.titleText}>Challengers</h3>
             </div>
-            <div className={teams.displayHorizontal}>
-              <div className={teams.splitDiv}>
-                <Team/>
-                <Team/>
-                <Team/>
-                <Team/>
-                <Team/>
-                <Team/>
-                <Team/>
-                <Team/>
-              </div>
-              <div className={teams.splitDiv}>
-                <Team/>
-                <Team/>
-                <Team/>
-                <Team/>
-                <Team/>
-                <Team/>
-                <Team/>
-                <Team/>
-              </div>
-            </div>
+            {major.displayChallengerTeams()}
           </div>
           <div className={teams.legendsCon}>
             <div className={teams.titleBar}>
               <h3 className={teams.titleText}>Legends</h3>
             </div>
-              <Team/>
-              <Team/>
-              <Team/>
-              <Team/>
-              <Team/>
-              <Team/>
-              <Team/>
-              <Team/>
+            {major.displayLegendsTeams()}
           </div>
         </div>
       </div>
@@ -61,15 +37,3 @@ function Teams() {
 }
 
 export default Teams;
-
-
-export function Team()
-{
-  return(
-    <div className={teams.teamCon}>
-      <img src={FnaticLogo} className={teams.logo}/>
-      <h4 className={teams.teamText}>Fnatic</h4>
-    </div>
-  )
-
-}
