@@ -2,8 +2,10 @@ import global from '../Stylesheets/global.module.css';
 import swiss from '../Stylesheets/swiss.module.css';
 import { NavigationBar } from './Home'
 import { Matchup } from '../Scripts/swissBucholz';
+import {Major} from '../Scripts/teamClasses';
 
 function Pickems() {
+  const major = new Major();
   return (
     <div className={global.container}>
       <header className={global.headerCon}>
@@ -14,7 +16,7 @@ function Pickems() {
 
           <div className={swiss.mainCon}>
             
-            <div className={swiss.matchupCon}>
+            <div className={swiss.endMatchupCon}>
               <h4 className={swiss.title}>BO1 0-0 </h4>
               <div className={swiss.matchupBody}>
                 <Matchup/>
@@ -102,7 +104,7 @@ function Pickems() {
 
           
 
-          <div className={swiss.matchupCon}>
+          <div className={swiss.endMatchupCon}>
             <h4 className={swiss.title}>BO3 2-2 </h4>
             <div className={swiss.matchupBody}>
                 <Matchup/>
@@ -116,7 +118,7 @@ function Pickems() {
         <div className={swiss.qualedTeamsMainCon}>
           <h3 className={swiss.title}>Qualified Teams</h3>
           <div className={swiss.qualedTeamsCon}>
-
+            {major.displayLegendsTeams()}
           </div>
         </div>
       </div>
