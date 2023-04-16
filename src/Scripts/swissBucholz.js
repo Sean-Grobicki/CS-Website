@@ -36,9 +36,9 @@ export function Matchup()
     let team2 = new Team("NAVI",swiss.logo);
     return (
         <div className={swiss.matchCon}>
-            {team1.displayTeam()}
-            VS
-            {team2.displayTeam()}
+            {team1.displayMatchupTeam()}
+            <p className={swiss.vs}>VS</p>
+            {team2.displayMatchupTeam()}
         </div>
     )
 

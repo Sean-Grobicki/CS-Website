@@ -91,16 +91,26 @@ export class Team
 
     displayTeam(legendStatus)
     {
-        let className = swiss.teamCon /*teams.teamCon*/;
+        let className = teams.teamCon;
         if (legendStatus)
         {
             className += " " + teams.legendTeamCon;
         }
         return (
         <div className={className}>
-            <img src={this.logo} className={/*teams.logo*/swiss.logo} alt={this.teamName}/>
+            <img src={this.logo} className={teams.logo} alt={this.teamName}/>
             <h4 className={teams.teamText}>{this.teamName}</h4>
         </div>
         )
+    }
+
+    displayMatchupTeam()
+    {
+        return (
+            <div className={swiss.teamCon}>
+                <img src={this.logo} className={swiss.logo} alt={this.teamName}/>
+                <h4 className={swiss.teamText}>{this.teamName}</h4>
+            </div>
+            )
     }
 }

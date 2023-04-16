@@ -11,7 +11,9 @@ function Pickems() {
       </header>
       <div className={global.contentCon}>
           <h2 className={global.h2}>Pickems</h2>
+
           <div className={swiss.mainCon}>
+            
             <div className={swiss.matchupCon}>
               <h4 className={swiss.title}>BO1 0-0 </h4>
               <div className={swiss.matchupBody}>
@@ -27,6 +29,7 @@ function Pickems() {
             </div>
 
             <div className={swiss.matchesCon}>
+
               <div className={swiss.matchupCon}>
                 <h4 className={swiss.title}>BO1 1-0 </h4>
                 <div className={swiss.matchupBody}>
@@ -45,9 +48,11 @@ function Pickems() {
                   <Matchup/>
                 </div>
               </div>
+
             </div>
 
             <div className={swiss.matchesCon}>
+
               <div className={swiss.matchupCon}>
                 <h4 className={swiss.title}>BO3 2-0 </h4>
                 <div className={swiss.matchupBody}>
@@ -71,6 +76,7 @@ function Pickems() {
                   <Matchup/>
                 </div>
               </div>
+
             </div>
 
           <div className={swiss.matchesCon}>
@@ -91,6 +97,7 @@ function Pickems() {
                   <Matchup/>
                 </div>
               </div>
+
            </div>
 
           
